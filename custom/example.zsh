@@ -21,3 +21,5 @@ devsetup () {
     sudo ipfw add 5 fwd 127.0.0.1,8080 tcp from any to me 80
     sshfs -p 22222 idlecool@localhost:/var/www ~/Workspace/ubuntu/www -oauto_cache,reconnect,volname=www
 }
+
+alias reload="source ~/.zshrc"
